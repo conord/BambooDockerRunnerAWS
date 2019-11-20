@@ -9,6 +9,11 @@ RUN apk -uv add --no-cache zip && \
 RUN apk add --no-cache nodejs && \
 	apk add --no-cache npm
 
+
+RUN npm install --global gulp-cli
+
 WORKDIR /aws
 
 CMD sh
+
+
